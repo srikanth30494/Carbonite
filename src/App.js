@@ -22,10 +22,10 @@ class App extends Component {
   }
 
   sortToggle = () => {
-    const { masterData } = this.state;
+    const { filteredData } = this.state;
     this.setState({sortStatusAsc: !this.state.sortStatusAsc}, () => {
-      const sortedData = masterData.sort(this.sortData);
-      this.setState({ data: sortedData});
+      const sortedData = filteredData.sort(this.sortData);
+      this.setState({ filteredData: sortedData});
     })
   }
 
