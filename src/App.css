@@ -10,17 +10,120 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  width: 100%;
+  height: 55px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: fixed;
+  justify-content: space-between;
+  top: 0;
   color: white;
+}
+
+.App-footer {
+  background-color: #282c34;
+  width: 100%;
+  height: 55px;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  bottom: 0;
+  color: white;
+}
+
+.App-brand {
+  padding: 15px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.App-footer-brand-url {
+  padding: 15px;
+  text-decoration: none;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: white;
+}
+.App-footer-brand-url:hover {
+  color: white;
+}
+.App-footer-brand-url:focus {
+  color: white;
+}
+
+.loading-spinner {
+  border: 5px solid #f3f3f3;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+  border-top: 5px solid #555;
+  border-radius: 50%;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+}
+
+.App-get-users {
+  padding: 15px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  background-color: #282c34;
+  font-weight: 400;
+  font-size: 15px;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.App-sort-toggle {
+  position: absolute;
+  z-index: 10;
+  top: 80px;
+  right: 361px;
+  padding: 15px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  background-color: #282c34;
+  font-weight: 400;
+  font-size: 15px;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.App-main-center {
+  margin: auto;
+  margin-top: 130px;
+  width: 50%;
+  padding: 10px;
+}
+
+
+#App-table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#App-table td, #App-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#App-table tr:nth-child(even){background-color: #f2f2f2;}
+
+#App-table tr:hover {background-color: #ddd;}
+
+#App-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
 }
 
 @keyframes App-logo-spin {
